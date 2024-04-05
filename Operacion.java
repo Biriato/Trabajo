@@ -13,16 +13,16 @@ public class Operacion {
         cuenta = new HashSet<>();
     }
     //Metodos de la clase
-    public void ingreso(){
+    public void Ingreso(){
 
     }
-    public void retirada(){
+    public void Retirada(){
 
     }
-    public void traspaso(){
+    public void Traspaso(){
 
     }
-    public void verSaldo(){
+    public void VerSaldo(){
 
     }
 
