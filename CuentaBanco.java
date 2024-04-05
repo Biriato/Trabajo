@@ -68,7 +68,7 @@ public class CuentaBanco {
     public void Ingreso(){
 
     }
-    public void Modificacion(){
+    public void modificacion(){
 
     }
 

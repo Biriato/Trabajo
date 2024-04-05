@@ -9,11 +9,11 @@ public class Operacion {
     //Constructores
 
     public Operacion(String tipoOperacion) {
-        TipoOperacion = tipoOperacion;
-        cuenta = new HashSet<>();
+        this.TipoOperacion = tipoOperacion;
+        this.cuenta = new HashSet<>();
     }
     //Metodos de la clase
-    public void Ingreso(){
+    public void ingreso(){
 
     }
     public void Retirada(){
