@@ -13,7 +13,7 @@ public class Operacion {
         this.cuenta = new HashSet<>();
     }
     //Metodos de la clase
-    public void ingreso(){
+    public void Ingreso(){
 
     }
     public void Retirada(){
