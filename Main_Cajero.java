@@ -6,6 +6,7 @@ public class Main_Cajero {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int opcion=1;
+        boolean existe = false;
         do{
             System.out.println("Seleciona la opcion que quieras realizar");
             System.out.println("0)Salir 1)Administar Cuenta 2 Operaciones con su cuenta");
@@ -26,18 +27,21 @@ public class Main_Cajero {
                     break;
                 case 2:
                     System.out.println("Introduce el numero de cuenta y el dni");
-                    System.out.println("Que operacion quieres realizar sobre esta cuenta");
-                    System.out.println("1)Ingreso 2)Retirada 3)Traspaso 4)Ver Saldo de la cuenta");
-                    switch (opcion){
-                        case 1:
-                            break;
-                        case 2:
-                            break;
-                        case 3:
-                            break;
-                        case 4:
-                            break;
+                    if(existe){
+                        System.out.println("Que operacion quieres realizar sobre esta cuenta");
+                        System.out.println("1)Ingreso 2)Retirada 3)Traspaso 4)Ver Saldo de la cuenta");
+                        switch (opcion){
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+                        }
                     }
+
                     break;
 
             }
