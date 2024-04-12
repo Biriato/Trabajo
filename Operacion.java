@@ -1,16 +1,19 @@
 package Proyecto_CODE;
 
 import java.util.HashSet;
+import java.util.Hashtable;
 
 public class Operacion {
     private String TipoOperacion;
-    private HashSet<CuentaBanco> cuenta;
+
+    private Hashtable<Integer , CuentaBanco> cuentas;
+
 
     //Constructores
 
     public Operacion(String tipoOperacion) {
         this.TipoOperacion = tipoOperacion;
-        this.cuenta = new HashSet<>();
+        this.cuentas = new Hashtable<>();
     }
     //Metodos de la clase
     public void Ingreso(){
