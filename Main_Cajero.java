@@ -1,10 +1,16 @@
 package Proyecto_CODE;
 
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.Scanner;
+
+import static Proyecto_CODE.Operacion.cuentas;
 
 public class Main_Cajero {
     static Scanner sc = new Scanner(System.in);
     static Scanner sc2 = new Scanner(System.in);
+    static int id=1;
+    static  int numcuenta =1;
     public static void main(String[] args) {
         int opcion=1;
         boolean existe = false;
@@ -56,14 +62,38 @@ public class Main_Cajero {
         int saldob = sc.nextInt();
         System.out.println("Propietario de la cuenta");
         String prop = sc2.nextLine();
-
+        cuentas.put(id,new CuentaBanco(DNI,numcuenta,saldob,prop));
 
     }
 
     public  static void EliminarCuenta(){
+        System.out.println("Introduce el numero de cuenta que quieres eliminar");
+        int ver = sc.nextInt();
+        int clave=0;
+
+        for (Map.Entry<Integer,CuentaBanco> c : cuentas.entrySet()) {
+            if (ver == c.getValue().getNumCuenta()) {
+                   clave=c.getKey();
+            }
+        }
+        cuentas.remove(clave);
 
     }
     public static  void ModificarCuenta(){
+        int clave = 0;
+            System.out.println("Introduce el numero de cuenta que quieres modificar");
+            int acu = sc.nextInt();
+            for (Map.Entry<Integer, CuentaBanco> c : cuentas.entrySet()) {
+                if (acu == c.getValue().getNumCuenta()) {
+                    clave = c.getKey();
+                } else {
+                    clave = 0;
+                }
+            }
+            if(cuentas.contains(clave)){
+                
+            }
+
 
     }
 

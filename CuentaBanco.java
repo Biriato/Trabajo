@@ -2,12 +2,12 @@ package Proyecto_CODE;
 
 public class CuentaBanco {
     private String DNI;
-    private String  NumCuenta;
+    private int  NumCuenta;
     private int saldo = 0;
     private String propietario;
     //Constructores
 
-    public CuentaBanco(String DNI, String numCuenta, int saldo, String propietario) {
+    public CuentaBanco(String DNI, int numCuenta, int saldo, String propietario) {
         if(comprobar(DNI)){
             this.DNI = DNI;
         }
@@ -19,7 +19,7 @@ public class CuentaBanco {
         this.propietario = propietario;
     }
 
-    public CuentaBanco(String DNI, String numCuenta, String propietario) {
+    public CuentaBanco(String DNI, int numCuenta, String propietario) {
         this.DNI = DNI;
         this.NumCuenta = numCuenta;
         this.propietario = propietario;
@@ -39,11 +39,11 @@ public class CuentaBanco {
         }
     }
 
-    public String getNumCuenta() {
+    public int getNumCuenta() {
         return NumCuenta;
     }
 
-    public void setNumCuenta(String numCuenta) {
+    public void setNumCuenta(int numCuenta) {
         NumCuenta = numCuenta;
     }
 
