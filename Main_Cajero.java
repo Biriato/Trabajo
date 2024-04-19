@@ -13,6 +13,7 @@ public class Main_Cajero {
     static  int numcuenta =1;
     public static void main(String[] args) {
         Operacion operacion = new Operacion();
+        int a;
         int opcion=1;
         int numacc=0;
         boolean existe = false;
