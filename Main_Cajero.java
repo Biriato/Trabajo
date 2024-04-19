@@ -81,6 +81,7 @@ public class Main_Cajero {
     }
     public static  void ModificarCuenta(){
         int clave = 0;
+        String p="";
             System.out.println("Introduce el numero de cuenta que quieres modificar");
             int acu = sc.nextInt();
             for (Map.Entry<Integer, CuentaBanco> c : cuentas.entrySet()) {
@@ -90,8 +91,14 @@ public class Main_Cajero {
                     clave = 0;
                 }
             }
-            if(cuentas.contains(clave)){
-                
+            if(clave!=0){
+                System.out.println("Introduce el nuevo propietario");
+                p=sc2.nextLine();
+                for (Map.Entry<Integer, CuentaBanco> c : cuentas.entrySet()) {
+                    if (clave==c.getKey()) {
+                        c.getValue().setPropietario(p);
+                    }
+                }
             }
 
 
