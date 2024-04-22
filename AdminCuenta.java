@@ -5,7 +5,15 @@ import java.util.Map;
 import static Proyecto_CODE.Main_Cajero.*;
 import static Proyecto_CODE.Operacion.cuentas;
 
+/**
+ * Clase vacia que solo contiene metodos que actuan directamente sobre la cuenta
+ * @author Alejandro Vidal
+ * @version  1.0
+ */
 public class AdminCuenta {
+    /**
+     * Metodo que crea un objeto de tipo CuentaBanco  y lo añade al Mapa
+     */
     public static void AñadirCuenta(){
         System.out.println("Introduce un DNI");
         String DNI=sc2.nextLine();
@@ -17,6 +25,9 @@ public class AdminCuenta {
 
     }
 
+    /**
+     * Metodo que permite eliminar una cuenta del Mapa usando el numero de cuenta
+     */
     public  static void EliminarCuenta(){
         System.out.println("Introduce el numero de cuenta que quieres eliminar");
         int ver = sc.nextInt();
@@ -30,6 +41,10 @@ public class AdminCuenta {
         cuentas.remove(clave);
 
     }
+
+    /**
+     * Metodo que permite modificar la cuenta  usando el numero decuenta para cambiar el propietario
+     */
     public static  void ModificarCuenta(){
         int clave = 0;
         String p="";

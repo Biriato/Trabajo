@@ -1,16 +1,24 @@
 package Proyecto_CODE;
 
-import java.util.Hashtable;
-import java.util.Map;
+
 import java.util.Scanner;
 
 import static Proyecto_CODE.AdminCuenta.*;
-import static Proyecto_CODE.Operacion.cuentas;
+
+/**
+ * Clase Main en la que se realizan las aciones principales
+ * @author Alejandro Vidal
+ * @version  1.0
+ */
 public class Main_Cajero {
     static Scanner sc = new Scanner(System.in);
     static Scanner sc2 = new Scanner(System.in);
     static int id=1;
     static  int numcuenta =1;
+    /**
+     * Metodo main del proyecto que consiste en un menu de seleccion para administrar la cuenta o realizar operaciones
+     * @param args
+     */
     public static void main(String[] args) {
         Operacion operacion = new Operacion();
         int opcion=1;
@@ -63,9 +71,7 @@ public class Main_Cajero {
                         System.out.println("El numero de cuenta introducido no existe");
 
                     }
-
                     break;
-
             }
         }while(opcion!=0);
 
