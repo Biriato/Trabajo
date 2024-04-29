@@ -13,7 +13,7 @@ import static Proyecto_CODE.AdminCuenta.*;
 public class Main_Cajero {
     static Scanner sc = new Scanner(System.in);
     static Scanner sc2 = new Scanner(System.in);
-    static int id=1;
+
     static  int numcuenta =1;
     /**
      * Metodo main del proyecto que consiste en un menu de seleccion para administrar la cuenta o realizar operaciones
@@ -49,6 +49,7 @@ public class Main_Cajero {
                     if(existe){
                         System.out.println("Que operacion quieres realizar sobre esta cuenta");
                         System.out.println("1)Ingreso 2)Retirada 3)Traspaso 4)Ver Saldo de la cuenta");
+                        opcion = sc.nextInt();
                         switch (opcion){
                             case 1:
                                 operacion.Ingreso(numacc);

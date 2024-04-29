@@ -10,7 +10,9 @@ import static Proyecto_CODE.Operacion.cuentas;
  * @author Alejandro Vidal
  * @version  1.0
  */
+
 public class AdminCuenta {
+    static int id=1;
     /**
      * Metodo que crea un objeto de tipo CuentaBanco  y lo añade al Mapa
      */
@@ -22,7 +24,7 @@ public class AdminCuenta {
         System.out.println("Propietario de la cuenta");
         String prop = sc2.nextLine();
         cuentas.put(id,new CuentaBanco(DNI,numcuenta,saldob,prop));
-
+        id++;
     }
 
     /**

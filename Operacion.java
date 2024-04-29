@@ -34,8 +34,7 @@ public class Operacion {
         for (Map.Entry<Integer, CuentaBanco> c : cuentas.entrySet()) {
             if (clave == c.getKey()) {
                 c.getValue().setSaldo(c.getValue().getSaldo()+ingreso);
-                System.out.println("Operacion realizada con exito");
-
+                System.out.println("Tu nuevo saldo es: " + c.getValue().getSaldo());
             }
         }
     }
@@ -53,7 +52,7 @@ public class Operacion {
             for (Map.Entry<Integer, CuentaBanco> c : cuentas.entrySet()) {
                 if (clave == c.getKey()) {
                     c.getValue().setSaldo(c.getValue().getSaldo() - retirada);
-                    System.out.println("Operacion realizada con exito");
+                    System.out.println("Tu nuevo saldo es: " + c.getValue().getSaldo());
                     if (c.getValue().getSaldo() < 0) {
                         c.getValue().setSaldo(0);
                     }
