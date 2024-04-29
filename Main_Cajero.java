@@ -80,7 +80,7 @@ public class Main_Cajero {
                 }
             } while (opcion != 0);
         }catch (Exception e){
-            System.out.println("La opcion seleccionada no existe");
+            System.out.println("La opcion seleccionada no existe o el dato introduccido no es valido");
         }
     }
 
