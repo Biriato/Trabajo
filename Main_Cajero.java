@@ -13,7 +13,6 @@ import static Proyecto_CODE.AdminCuenta.*;
 public class Main_Cajero {
     static Scanner sc = new Scanner(System.in);
     static Scanner sc2 = new Scanner(System.in);
-
     static  int numcuenta =1;
     /**
      * Metodo main del proyecto que consiste en un menu de seleccion para administrar la cuenta o realizar operaciones
